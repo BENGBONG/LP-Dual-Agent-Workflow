@@ -33,7 +33,37 @@ This is intentionally separate from single-agent task tracking. The core contrac
 
 ## Installation
 
-Copy this folder into your agent skills directory.
+Install with npm:
+
+```bash
+npx lp-dual-agent-workflow install
+```
+
+By default, this installs the skill to:
+
+```text
+~/.codex/skills/lp-dual-agent-workflow
+```
+
+Install to a Claude-style local skills directory instead:
+
+```bash
+npx lp-dual-agent-workflow install --agents
+```
+
+Install to a custom skills root:
+
+```bash
+npx lp-dual-agent-workflow install --target ~/.agents/skills
+```
+
+Overwrite an existing install:
+
+```bash
+npx lp-dual-agent-workflow install --force
+```
+
+Manual install is also supported. Copy this folder into your agent skills directory.
 
 For Codex:
 
@@ -101,6 +131,9 @@ templates/
   AGENTS-collab-section.md
 agents/
   openai.yaml
+bin/
+  lp-dual-agent-workflow.mjs
+package.json
 ```
 
 ## License
