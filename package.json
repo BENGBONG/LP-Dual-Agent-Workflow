@@ -1,0 +1,37 @@
+{
+  "name": "lp-dual-agent-workflow",
+  "version": "0.1.0",
+  "description": "Coordinate Planner and Executor AI agents through git-based task specs and reviews.",
+  "license": "MIT",
+  "type": "module",
+  "bin": {
+    "lp-dual-agent-workflow": "bin/lp-dual-agent-workflow.mjs"
+  },
+  "files": [
+    "SKILL.md",
+    "templates",
+    "agents",
+    "bin",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "ai",
+    "agent",
+    "codex",
+    "skill",
+    "workflow",
+    "collaboration"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BENGBONG/LP-Dual-Agent-Workflow.git"
+  },
+  "bugs": {
+    "url": "https://github.com/BENGBONG/LP-Dual-Agent-Workflow/issues"
+  },
+  "homepage": "https://github.com/BENGBONG/LP-Dual-Agent-Workflow#readme",
+  "engines": {
+    "node": ">=18"
+  }
+}
