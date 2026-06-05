@@ -35,37 +35,7 @@ This is intentionally separate from single-agent task tracking. The core contrac
 
 ## Installation
 
-Install with npm:
-
-```bash
-npx lp-dual-agent-workflow install
-```
-
-By default, this installs the skill to:
-
-```text
-~/.agents/skills/lp-dual-agent-workflow
-```
-
-Install to Codex's local skills directory instead:
-
-```bash
-npx lp-dual-agent-workflow install --codex
-```
-
-Install to a custom skills root:
-
-```bash
-npx lp-dual-agent-workflow install --target ~/.codex/skills
-```
-
-Overwrite an existing install:
-
-```bash
-npx lp-dual-agent-workflow install --force
-```
-
-Manual install is also supported. Copy this folder into your agent skills directory.
+Copy this folder into your agent skills directory.
 
 For the default agent skills directory:
 
@@ -133,9 +103,6 @@ templates/
   AGENTS-collab-section.md
 agents/
   openai.yaml
-bin/
-  lp-dual-agent-workflow.mjs
-package.json
 ```
 
 ## License
@@ -179,37 +146,7 @@ AGENTS.md
 
 ## 安装
 
-通过 npm 安装：
-
-```bash
-npx lp-dual-agent-workflow install
-```
-
-默认会安装到全局 agent skills 目录：
-
-```text
-~/.agents/skills/lp-dual-agent-workflow
-```
-
-如果要安装到 Codex 的本地 skills 目录：
-
-```bash
-npx lp-dual-agent-workflow install --codex
-```
-
-如果要安装到自定义 skills 根目录：
-
-```bash
-npx lp-dual-agent-workflow install --target ~/.codex/skills
-```
-
-覆盖已有安装：
-
-```bash
-npx lp-dual-agent-workflow install --force
-```
-
-也可以手动安装。把这个文件夹复制到你的 agent skills 目录即可。
+把这个文件夹复制到你的 agent skills 目录即可。
 
 默认全局 agent skills 目录：
 
@@ -277,9 +214,6 @@ templates/
   AGENTS-collab-section.md
 agents/
   openai.yaml
-bin/
-  lp-dual-agent-workflow.mjs
-package.json
 ```
 
 ## 许可证
