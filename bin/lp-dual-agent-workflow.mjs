@@ -20,7 +20,7 @@ Usage:
   lp-dual-agent-workflow install [options]
 
 Options:
-  --target <dir>   Skills root directory. Default: ~/.codex/skills
+  --target <dir>   Skills root directory. Default: ~/.agents/skills
   --codex          Install to ~/.codex/skills
   --agents         Install to ~/.agents/skills
   --force          Overwrite an existing lp-dual-agent-workflow install
@@ -29,7 +29,7 @@ Options:
 
 Examples:
   npx lp-dual-agent-workflow install
-  npx lp-dual-agent-workflow install --agents
+  npx lp-dual-agent-workflow install --codex
   npx lp-dual-agent-workflow install --target ~/.agents/skills --force
 `;
 }
@@ -43,7 +43,7 @@ function expandHome(inputPath) {
 function parseArgs(argv) {
   const options = {
     command: "install",
-    targetRoot: path.join(os.homedir(), ".codex", "skills"),
+    targetRoot: path.join(os.homedir(), ".agents", "skills"),
     force: false,
     dryRun: false,
     help: false
