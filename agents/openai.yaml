@@ -1,0 +1,4 @@
+interface:
+  display_name: "LP Dual-Agent Workflow"
+  short_description: "Coordinate Planner and Executor agents through git task files."
+  default_prompt: "Use LP Dual-Agent Workflow in this git repository."
