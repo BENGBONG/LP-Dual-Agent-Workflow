@@ -35,6 +35,39 @@ This is intentionally separate from single-agent task tracking. The core contrac
 
 ## Installation
 
+After the package is published to npm, install it with:
+
+```bash
+npx lp-dual-agent-workflow install
+```
+
+By default, this installs the skill to:
+
+```text
+~/.agents/skills/lp-dual-agent-workflow
+```
+
+For Codex, use:
+
+```bash
+npx lp-dual-agent-workflow install --codex
+```
+
+To overwrite an existing install:
+
+```bash
+npx lp-dual-agent-workflow install --force
+```
+
+You can also install the command globally:
+
+```bash
+npm install -g lp-dual-agent-workflow
+lp-dual-agent-workflow install
+```
+
+Manual installation is also supported.
+
 Copy this folder into your agent skills directory.
 
 For the default agent skills directory:
@@ -145,6 +178,39 @@ AGENTS.md
 它和单智能体任务跟踪不同。核心是角色分离：Planner 负责 **why / what / done**，Executor 负责 **how**。
 
 ## 安装
+
+包发布到 npm 后，可以用下面的命令安装：
+
+```bash
+npx lp-dual-agent-workflow install
+```
+
+默认会安装到：
+
+```text
+~/.agents/skills/lp-dual-agent-workflow
+```
+
+如果要安装到 Codex 的 skills 目录：
+
+```bash
+npx lp-dual-agent-workflow install --codex
+```
+
+如果本地已经安装过，需要覆盖：
+
+```bash
+npx lp-dual-agent-workflow install --force
+```
+
+也可以全局安装命令：
+
+```bash
+npm install -g lp-dual-agent-workflow
+lp-dual-agent-workflow install
+```
+
+也支持手动安装。
 
 把这个文件夹复制到你的 agent skills 目录即可。
 
